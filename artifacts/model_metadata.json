@@ -1,0 +1,82 @@
+{
+  "model": "RandomForestClassifier",
+  "rows": 1200,
+  "features": [
+    "flow_duration",
+    "total_fwd_packets",
+    "total_backward_packets",
+    "flow_bytes_per_sec",
+    "flow_packets_per_sec",
+    "packet_length_mean",
+    "packet_length_std",
+    "syn_flag_count",
+    "ack_flag_count",
+    "destination_port"
+  ],
+  "classes": [
+    "BENIGN",
+    "DDoS",
+    "PortScan"
+  ],
+  "metrics": {
+    "accuracy": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "f1_macro": 1.0,
+    "labels": [
+      "BENIGN",
+      "DDoS",
+      "PortScan"
+    ],
+    "confusion_matrix": [
+      [
+        192,
+        0,
+        0
+      ],
+      [
+        0,
+        62,
+        0
+      ],
+      [
+        0,
+        0,
+        46
+      ]
+    ],
+    "classification_report": {
+      "BENIGN": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 192.0
+      },
+      "DDoS": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 62.0
+      },
+      "PortScan": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 46.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 300.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 300.0
+      }
+    }
+  }
+}
