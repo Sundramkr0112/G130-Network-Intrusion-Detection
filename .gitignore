@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+artifacts/*.joblib
+artifacts/*.json
+.streamlit/
+.DS_Store
